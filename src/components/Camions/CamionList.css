@@ -160,3 +160,90 @@
     width: 100%;
   }
 }
+
+
+.camions-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.camions-add-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 7px;
+  background: #059669;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.camions-add-btn:hover {
+  background: #047857;
+}
+
+.camions-add-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.camions-success {
+  padding: 12px 15px;
+  border-radius: 7px;
+  background: #d1fae5;
+  color: #047857;
+}
+
+.camion-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.camion-edit-btn,
+.camion-archive-btn {
+  padding: 7px 11px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.camion-edit-btn {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.camion-archive-btn {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.camion-edit-btn:hover,
+.camion-archive-btn:hover {
+  opacity: 0.8;
+}
+
+.camion-edit-btn:disabled,
+.camion-archive-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .camions-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .camions-header-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .camions-table {
+    min-width: 1100px;
+  }
+}
